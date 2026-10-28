@@ -1,0 +1,108 @@
+/* SmartDocs AI - Dark Navy + Purple Theme */
+
+:root {
+    --bg: #0b1020;
+    --surface: #131b31;
+    --surface-light: #1b2540;
+    --purple: #8b5cf6;
+    --purple-light: #a78bfa;
+    --text: #f5f3ff;
+    --muted: #a5b0ca;
+    --border: rgba(167, 139, 250, 0.20);
+}
+
+.stApp {
+    background: linear-gradient(135deg, #0b1020 0%, #11152b 55%, #191333 100%);
+    color: var(--text);
+}
+
+[data-testid="stHeader"] {
+    background: transparent;
+}
+
+[data-testid="stSidebar"] {
+    background: #0d1326;
+    border-right: 1px solid var(--border);
+}
+
+[data-testid="stSidebar"] * {
+    color: var(--text);
+}
+
+.block-container {
+    max-width: 1150px;
+    padding-top: 2.5rem;
+    padding-bottom: 3rem;
+}
+
+h1, h2, h3 {
+    color: var(--text) !important;
+    letter-spacing: -0.5px;
+}
+
+p, label, .stMarkdown {
+    color: var(--muted);
+}
+
+.stButton > button,
+.stDownloadButton > button {
+    background: linear-gradient(135deg, #7c3aed, #6d28d9);
+    color: white !important;
+    border: 1px solid rgba(167, 139, 250, 0.35);
+    border-radius: 10px;
+    padding: 0.55rem 1.1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+    border-color: #c4b5fd;
+    transform: translateY(-1px);
+}
+
+[data-testid="stFileUploader"] {
+    background: rgba(139, 92, 246, 0.07);
+    border: 1px dashed #8b5cf6;
+    border-radius: 14px;
+    padding: 12px;
+}
+
+[data-testid="stFileUploader"] section {
+    background: transparent;
+}
+
+[data-testid="stExpander"] {
+    background: rgba(19, 27, 49, 0.88);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+[data-testid="stMetric"] {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+}
+
+[data-testid="stAlert"] {
+    border-radius: 10px;
+}
+
+.stTextInput input,
+.stTextArea textarea,
+.stSelectbox [data-baseweb="select"] > div {
+    background-color: var(--surface) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+    border-radius: 9px !important;
+}
+
+hr {
+    border-color: var(--border);
+}
+
+footer {
+    visibility: hidden;
+}
